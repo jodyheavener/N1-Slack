@@ -1,0 +1,46 @@
+.list-item {
+
+  &:not(.focused) {
+    color: @black-spectrum-1;
+  }
+
+  &.focused {
+    background: @ocean-blue !important;
+    border-bottom: none !important;
+  }
+}
+
+.thread-list .participants,
+.draft-list .participants {
+  font-size: 15px;
+}
+
+.thread-list-narrow .subject {
+  font-size: 13px;
+  color: @grey-spectrum-1;
+  -webkit-font-smoothing: antialiased;
+}
+
+.thread-list .focused .subject,
+.draft-list .focused .subject {
+  color: rgba(255,255,255,0.7);
+}
+
+.thread-list-narrow .snippet-and-labels {
+  align-items: center;
+
+  .snippet {
+    font-size: 15px;
+  }
+}
+
+.timestamp {
+  font-size: 12px;
+  text-transform: uppercase;
+  opacity: 1;
+  -webkit-font-smoothing: antialiased;
+
+  .list-item:not(.focused) & {
+    color: @grey-spectrum-1;
+  }
+}

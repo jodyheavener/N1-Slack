@@ -1,0 +1,127 @@
+.account-sidebar {
+  background-color: @disco-purple;
+}
+
+.account-sidebar-sections {
+  padding-left: 10px;
+  margin-top: 9px;
+
+  .heading span {
+    color: @disco-purple-light;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+  }
+}
+
+.nylas-outline-view {
+
+  .heading {
+    margin-bottom: 5px;
+    padding-right: 25px;
+    padding-top: 15px;
+  }
+
+  &:first-child .heading {
+    padding-top: 0;
+  }
+
+  .item {
+    position: relative;
+    padding-left: 30px;
+    margin-left: -30px;
+    margin-right: 20px;
+    color: @disco-purple-light;
+    text-transform: lowercase;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  .item:hover {
+    background-color: @disco-purple-dark;
+  }
+
+  .icon {
+    opacity: 0.5;
+
+    .content-mask {
+      background-color: #fff !important;
+    }
+  }
+
+  .name {
+    font-size: 16px;
+  }
+
+  .disclosure-triangle {
+    position: relative;
+    z-index: 1;
+
+    div {
+      border-left-color: #fff;
+      opacity: 0.4;
+    }
+  }
+
+  .item.selected {
+    color: #fff;
+    background-color: @seafoam-green;
+
+    .icon {
+      opacity: 1;
+
+      .content-mask {
+        background-color: #fff;
+      }
+    }
+  }
+
+  .item-count-box {
+    position: absolute;
+    right: 6px;
+    width: 25px;
+    height: 19px;
+    padding: 2px 0;
+    color: #fff;
+    font-size: 13px;
+    line-height: 14px;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+    background: @punch-red !important;
+    border-radius: 9px;
+  }
+
+  .add-item-button img {
+    background-color: rgba(255,255,255,0.5) !important;
+  }
+}
+
+.item-children .item {
+  padding-left: 42px;
+  margin-left: -42px;
+}
+
+.account-switcher {
+  top: -3px;
+  right: 18px;
+
+  img {
+    width: 32px !important;
+    height: 33px !important;
+    background-color: #fff;
+    -webkit-mask-image: url('/Applications/Nylas N1.app/Contents/Resources/app.asar/static/images/sidebar/account-switcher-dropdown@2x.png');
+    -webkit-mask-repeat: no-repeat;
+    object-position: 10000px center;
+  }
+}
+
+.flexbox-handle-horizontal {
+
+  div {
+    box-shadow: 0.5px 0 0 rgba(0,0,0,0.2);
+    transition: all 0.1s ease-in;
+  }
+
+  &:hover div {
+    box-shadow: 0.5px 0 0 rgba(0,0,0,0.4);
+  }
+}

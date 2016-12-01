@@ -1,0 +1,102 @@
+#message-list {
+  background-color: #fff;
+
+  .message-subject-wrap {
+    margin-bottom: 18px;
+  }
+
+  .message-subject {
+    font-size: 20px;
+    font-weight: 700;
+    color: @black-spectrum-1;
+  }
+
+  .thread-injected-mail-labels {
+    margin-top: 3px;
+  }
+
+  .messages-wrap .scroll-region-content-inner {
+    padding: 10px;
+  }
+
+  .message-item-wrap .message-item-white-wrap {
+    border-radius: 6px;
+    border: 1px solid @ocean-blue;
+    box-shadow: 0 1px 10px @grey-spectrum-3;
+  }
+
+  .message-item-wrap.collapsed {
+
+    .message-item-white-wrap {
+      border-color: @grey-spectrum-3;
+    }
+
+    & + .minified-bundle {
+      margin-top: 12px;
+      opacity: 0.7;
+    }
+  }
+
+  .message-item-wrap .message-item-white-wrap.composer-outer-wrap {
+    background-color: #fff;
+    border-style: dashed;
+    box-shadow: none;
+
+    &:not(.focused) {
+      border-color: @grey-spectrum-3;
+    }
+
+    .composer-action-bar-wrap {
+      background-color: @grey-spectrum-6;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+    }
+
+    &.focused {
+      box-shadow: none;
+
+      .composer-action-bar-wrap {
+        background-color: @grey-spectrum-5;
+      }
+    }
+  }
+
+  .footer-reply-area-wrap {
+    margin-top: -6px;
+    border: 1px solid @ocean-blue;
+    border-top-color: @grey-spectrum-3;
+  }
+}
+
+.tokenizing-field .token {
+  padding: 2px 8px;
+  padding-right: 22px;
+  margin-top: -1px;
+  color: @ocean-blue;
+  font-size: 13px;
+  font-weight: 700;
+  background: none;
+  border: 1px solid @ocean-blue;
+  border-radius: 3px;
+  box-shadow: none;
+
+  .action img {
+    background-color: @ocean-blue;
+  }
+
+  &.selected {
+    color: #fff;
+    background: @ocean-blue;
+    box-shadow: none;
+
+    .action img {
+      background-color: #fff;
+    }
+  }
+}
+
+.composer-action-bar-content {
+  padding: 15px 22px;
+}

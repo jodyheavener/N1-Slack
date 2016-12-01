@@ -1,0 +1,13 @@
+{
+  "name": "N1-Slack",
+  "title": "Slack",
+  "displayName": "Slack",
+  "theme": "ui",
+  "version": "0.0.1",
+  "description": "A theme that inspired by Slack",
+  "license": "GPL-3.0",
+  "engines": {
+    "nylas": "*"
+  },
+  "private": true
+}
