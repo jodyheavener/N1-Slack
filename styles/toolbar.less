@@ -87,8 +87,22 @@
   }
 }
 
-.toolbar-activity .activity-toolbar-icon {
-  margin-top: 43px;
+.toolbar-activity {
+
+  .unread-count.active {
+    right: -7px;
+    top: 14px;
+    padding: 1px 4px;
+    font-weight: 700;
+    font-weight: 700;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+    background: @punch-red;
+    border-radius: 5px;
+  }
+
+  .activity-toolbar-icon {
+    margin-top: 43px;
+  }
 }
 
 .btn.item-compose {
@@ -104,5 +118,26 @@
 
   &:hover .content-mask {
     background-color: @ocean-blue;
+  }
+}
+
+.activity-list-container {
+
+  .activity-list-item {
+    padding: 8px 12px;
+    color: @black-spectrum-2;
+
+    &:hover {
+      background-color: @ocean-blue;
+      color: #fff;
+
+      .timestamp {
+        color: rgba(255,255,255,0.5);
+      }
+    }
+  }
+
+  .action-message {
+    font-weight: 700;
   }
 }
