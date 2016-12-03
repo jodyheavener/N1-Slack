@@ -1,0 +1,39 @@
+.toolbar-RootSidebar {
+  background: @column-bg;
+}
+
+.toolbar-window-controls {
+  margin-top: 18px;
+
+  .layout-mode-popout & {
+    margin-top: 7px;
+  }
+}
+
+.toolbar-activity {
+  margin-top: 14px;
+  height: 26px;
+
+  .activity-toolbar-icon {
+    margin-top: 0;
+  }
+}
+
+.activity-list-container {
+
+  .disclosure-triangle div {
+
+  }
+}
+
+.toolbar-activity .activity-toolbar-icon,
+.btn-toolbar.item-compose img.content-mask {
+  background-color: #fff;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.toolbar-activity:hover .activity-toolbar-icon,
+.btn-toolbar.item-compose:hover img.content-mask {
+  opacity: 1;
+}
