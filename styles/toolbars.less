@@ -64,7 +64,8 @@ body.platform-win32 .sheet-toolbar-container .btn-toolbar:hover {
   box-shadow: none;
   margin-top: 14px;
 
-  &:hover .content-mask {
+  &:hover img.content-mask,
+  &:active img.content-mask {
     background-color: @love-pink;
   }
 
@@ -77,6 +78,7 @@ body.platform-win32 .sheet-toolbar-container .btn-toolbar:hover {
   }
 }
 
-.message-toolbar-items .btn-toolbar:hover .content-mask {
+.message-toolbar-items .btn-toolbar:hover img.content-mask,
+.message-toolbar-items .btn-toolbar:active img.content-mask {
   background-color: @ocean-blue;
 }
