@@ -43,7 +43,7 @@
   top: -4px;
   padding: 1px 4px;
   font-weight: 700;
-  text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+  text-shadow: 0 1px 0 fade(#000,20%);
   border-radius: 5px;
   background-color: @active-presence;
 }
@@ -62,7 +62,7 @@
 
   .scroll-region-content {
     border-radius: 10px;
-    -webkit-mask-image: -webkit-gradient(linear, left 92%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    -webkit-mask-image: -webkit-gradient(linear, left 92%, left bottom, from(#000), to(transparent));
   }
 
   .scrollbar-track {
@@ -86,7 +86,7 @@
     }
 
     &:hover .timestamp {
-      color: rgba(255,255,255,0.6);
+      color: fade(#fff,60%);
     }
   }
 
