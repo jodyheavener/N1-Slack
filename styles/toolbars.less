@@ -33,6 +33,21 @@
   }
 }
 
+.sheet-toolbar-container.mode-split .toolbar-RootSidebar {
+  position: relative;
+
+  &:after {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 1px;
+    display: block;
+    background-color: @column-bg;
+  }
+}
+
 // jackiehluo -> (themes): Fixes Windows button UI issues in #1649
 body.platform-win32 .sheet-toolbar-container .btn-toolbar:hover {
   background: none;

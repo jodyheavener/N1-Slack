@@ -7,18 +7,20 @@
 @theme-colors: #4D394B,#3E313C,#4C9689,#FFFFFF,#3E313C,#FFFFFF,#38978D,#EB4D5C;
 
 @column-bg:        extract(@theme-colors, 1);
-@menu-bg-hover:    extract(@theme-colors, 2);
+@menu-bg-hover:    extract(@theme-colors, 2); // Note 1
 @active-item:      extract(@theme-colors, 3);
 @active-item-text: extract(@theme-colors, 4);
 @hover-item:       extract(@theme-colors, 5);
 @text-color:       extract(@theme-colors, 6);
-@active-presence:  extract(@theme-colors, 7); // Note 1
-@mention-badge:    extract(@theme-colors, 8); // Note 2
+@active-presence:  extract(@theme-colors, 7); // Note 2
+@mention-badge:    extract(@theme-colors, 8); // Note 3
 
 /*
- * Note 1: Active Presence is not applicable in N1; this color will be used for
- *         the unread count badge color instead
+ * Note 1: Menu Background Hover is not applicable in N1; this color will be used for
+ *         the sidebar item hover color
  * Note 2: Mention Badge is not applicable in N1; this color will be used for
+ *         the unread count badge color instead
+ * Note 3: Active Presence is not applicable in N1; this color will be used for
  *         the activity badge color instead
  */
 
