@@ -15,6 +15,7 @@
 
 .account-sidebar-sections {
   padding-left: 10px;
+  margin-bottom: 20px;
 
   .heading span {
     margin-bottom: 3px;
@@ -22,6 +23,17 @@
     text-transform: uppercase;
     font-weight: 700;
     font-size: 12px;
+  }
+}
+
+.account-sidebar .scrollbar-track {
+  background-color: transparent;
+  border-left: none;
+  width: 13px;
+
+  .scrollbar-handle {
+    border: none;
+    background: rgba(255,255,255,0.7);
   }
 }
 
@@ -102,9 +114,13 @@
   img {
     width: 32px !important;
     height: 33px !important;
-    background-color: #fff;
+    background-color: rgba(255,255,255,0.6);
     -webkit-mask-image: url('/Applications/Nylas N1.app/Contents/Resources/app.asar/static/images/sidebar/account-switcher-dropdown@2x.png');
     -webkit-mask-repeat: no-repeat;
     object-position: 10000px center;
+  }
+
+  &:hover img {
+    background-color: #fff;
   }
 }
