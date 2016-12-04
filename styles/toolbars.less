@@ -11,10 +11,6 @@
   border: none;
 }
 
-.sheet-toolbar .selection-bar .absolute {
-
-}
-
 .toolbar-RootSidebar,
 .toolbar-MessageList,
 .toolbar-MessageListSidebar,
@@ -52,4 +48,20 @@ body.platform-win32 .sheet-toolbar-container .btn-toolbar:hover {
   border: none;
   box-shadow: none;
   margin-top: 14px;
+
+  &:hover .content-mask {
+    background-color: @love-pink;
+  }
+
+  &.mode-toggle.mode-false {
+    background: @grey-spectrum-3;
+
+    .content-mask {
+      background-color: @black-spectrum-1;
+    }
+  }
+}
+
+.message-toolbar-items .btn-toolbar:hover .content-mask {
+  background-color: @ocean-blue;
 }
