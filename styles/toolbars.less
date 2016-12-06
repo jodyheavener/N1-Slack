@@ -19,8 +19,7 @@
   height: 100%;
 }
 
-.layout-mode-list .toolbar-MessageList,
-.sheet-toolbar-container.mode-popout {
+.layout-mode-list .toolbar-MessageList {
   background: @column-bg;
   color: #fff;
   border: none;
@@ -29,6 +28,34 @@
     background: desaturate(@column-bg, 5%);
     color: #fff;
     border: none;
+  }
+}
+
+.layout-mode-popout {
+
+  .sheet-toolbar {
+    height: 45px;
+    min-height: 45px;
+    max-height: 45px;
+    border: none !important;
+  }
+}
+
+.sheet-toolbar-container.mode-popout {
+  background: #f2f2f5; // single-use color
+  color: @black-spectrum-2;
+  border: none;
+
+  .is-blurred & {
+    background: #eee;
+    color: @black-spectrum-2;
+    border: none;
+  }
+
+  .window-title {
+    font-weight: 900;
+    font-size: 16px;
+    margin-top: 4px;
   }
 }
 
