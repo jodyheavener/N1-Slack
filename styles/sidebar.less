@@ -1,0 +1,138 @@
+.column-RootSidebar,
+.account-sidebar,
+.toolbar-RootSidebar {
+  height: 100%;
+  background-color: @column-bg;
+
+  // If NOT Retina display, subpixel-antialias fonts instead
+  @media
+    not screen and (-webkit-min-device-pixel-ratio: 1.3),
+    not screen and (-o-min-device-pixel-ratio: 13/10),
+    not screen and (min-resolution: 120dpi) {
+      -webkit-font-smoothing: subpixel-antialiased !important;
+  }
+}
+
+.account-sidebar-sections {
+  padding-left: 10px;
+  margin-bottom: 20px;
+
+  .heading span {
+    margin-bottom: 3px;
+    color: fade(#fff,55%);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+  }
+}
+
+.account-sidebar .scrollbar-track {
+  background-color: transparent;
+  border-left: none;
+  width: 13px;
+
+  .scrollbar-handle {
+    border: none;
+    background: fade(#fff,70%);
+  }
+}
+
+.nylas-outline-view {
+
+  .item {
+    position: relative;
+    padding-left: 30px;
+    margin-left: -30px;
+    margin-right: 18px;
+    color: fade(#fff,55%);
+    text-transform: lowercase;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  .item-children .item {
+    padding-left: 42px;
+    margin-left: -42px;
+  }
+
+  .icon img.content-mask {
+    background-color: fade(#fff,55%);
+  }
+
+  .item:hover {
+    background: @menu-bg-hover;
+  }
+
+  .item.selected {
+    background: @active-item;
+    color: @active-item-text;
+  }
+
+  .item.selected .icon img.content-mask {
+    background-color: @active-item-text;
+  }
+
+  .item .item-count-box {
+    margin-left: auto;
+  }
+
+  .item-count-box ~ .name {
+    margin-right: 10px;
+  }
+
+  .disclosure-triangle {
+    position: relative;
+    z-index: 1;
+
+    div {
+      border-left-color: fade(#fff,50%);
+    }
+  }
+
+  input.item-input {
+    background-color: fade(#fff,20%) !important;
+    border-color: transparent !important;
+    color: #fff;
+    text-transform: lowercase;
+
+    &:focus {
+      border-color: fade(#fff,30%) !important;
+      box-shadow: none !important;
+    }
+  }
+
+  .item .item-count-box.alt-count {
+    height: 19px;
+    padding: 2px 7px;
+    margin-right: -9px;
+    color: #fff;
+    font-size: 13px;
+    line-height: 14px;
+    text-shadow: 0 1px 0 fade(#000,20%);
+    background: @mention-badge;
+    border-radius: 10px;
+  }
+
+  .add-item-button img {
+    background-color: fade(#fff,50%) !important;
+  }
+}
+
+.account-switcher {
+  top: 6px;
+  right: 18px;
+  transform: scale(0.8);
+
+  img {
+    width: 32px !important;
+    height: 33px !important;
+    background-color: fade(#fff,60%);
+    -webkit-mask-image: url('/Applications/Nylas N1.app/Contents/Resources/app.asar/static/images/sidebar/account-switcher-dropdown@2x.png');
+    -webkit-mask-repeat: no-repeat;
+    object-position: 10000px center;
+  }
+
+  &:hover img {
+    background-color: #fff;
+  }
+}

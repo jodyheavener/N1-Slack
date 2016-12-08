@@ -1,66 +1,19 @@
+/*
+ * Overrides both `body` and `nylas-workspace` fonts
+ */
 body,
 nylas-workspace {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, 'Segoe UI', Tahoma, Arial, sans-serif !important;
 }
 
-.btn {
-  padding: 0 5px;
-  background: none;
-  border: none;
-  box-shadow: none !important;
-}
+.flexbox-handle-horizontal {
 
-.button-dropdown.btn-emphasis {
-
-  .primary-item,
-  .secondary-picker,
-  .only-item {
-    position: relative;
-    height: auto;
-    padding: 6px 13px;
-    color: #fff;
-    font-weight: 900;
-    font-size: 17px;
-    text-shadow: 0 1px 1px rgba(0,0,0,0.1);
-    background: @mint-green;
-    border: none;
-    box-shadow: none;
-  }
-}
-
-.mail-label {
-  padding: 2px 6px;
-  background-image: none !important;
-  border-radius: 5px;
-  text-transform: lowercase;
-
-  &.removable {
-    opacity: 0.8;
-
-    &:hover {
-      opacity: 1;
-    }
-  }
-}
-
-.timestamp {
-  font-size: 12px;
-  text-transform: uppercase;
-  opacity: 1;
-  -webkit-font-smoothing: antialiased;
-}
-
-.fixed-popover-container {
-
-  .fixed-popover {
-    background-color: #fff;
-    border: 1px solid rgba(0,0,0,0.1);
-    border-radius: 10px;
-    box-shadow: 0 0 1px rgba(0,0,0,0.04), 0 2px 8px rgba(0,0,0,0.1) !important;
-    overflow: hidden;
+  div {
+    box-shadow: 0.5px 0 0 fade(#000,20%);
+    transition: all 0.1s ease-in;
   }
 
-  .fixed-popover-pointer {
-    top: 1px !important;
+  &:hover div {
+    box-shadow: 0.5px 0 0 fade(#000,40%);
   }
 }

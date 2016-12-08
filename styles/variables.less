@@ -1,26 +1,48 @@
-// Feature colors
-@disco-purple: #4d394b;
-@disco-purple-dark: #3e313c;
+/*
+ * Main theme colors
+ *
+ * Tip: use your own Slack Custom Colors by going to your Slack preferences
+ *      and copy-pasting the values from Sidebar Theme > Custom Theme
+ */
+@theme-colors: #4D394B,#3E313C,#4C9689,#FFFFFF,#3E313C,#FFFFFF,#38978D,#EB4D5C;
+
+@column-bg:        extract(@theme-colors, 1);
+@menu-bg-hover:    extract(@theme-colors, 2); // Note 1
+@active-item:      extract(@theme-colors, 3);
+@active-item-text: extract(@theme-colors, 4);
+@hover-item:       extract(@theme-colors, 5);
+@text-color:       extract(@theme-colors, 6);
+@active-presence:  extract(@theme-colors, 7); // Note 2
+@mention-badge:    extract(@theme-colors, 8); // Note 3
+
+/*
+ * Note 1: Menu Background Hover is not applicable in N1; this color will be used for
+ *         the sidebar item hover color
+ * Note 2: Mention Badge is not applicable in N1; this color will be used for
+ *         the unread count badge color instead
+ * Note 3: Active Presence is not applicable in N1; this color will be used for
+ *         the activity badge color instead
+ */
+
+/*
+ * Additional theme colors
+ *
+ * Although these aren't customizeable in Slack, feel free to tweak them
+ * as you see fit to make your N1 experience even better
+ */
 @disco-purple-light: #ab9ba9;
-
-@seafoam-green: #4c9689;
 @mint-green: #2ab27b;
-
 @ocean-blue: #3aa3e3;
-
-@punch-red: #eb4D5c;
-
 @daisy-yellow: #ffcc00;
 @daffodil-yellow: #edb431;
+@love-pink: #eb4d5c;
 
 // Greys from dark to light
-@grey-spectrum-0: #a09a9f; // purple grey
-@grey-spectrum-1: #9e9ea6; // blue grey
-@grey-spectrum-2: #717274;
-@grey-spectrum-3: #e0e0e0;
-@grey-spectrum-4: #e8e8e8;
-@grey-spectrum-5: #fafafa;
-@grey-spectrum-6: #fefefe;
+@grey-spectrum-1: #717274;
+@grey-spectrum-2: #e0e0e0;
+@grey-spectrum-3: #e8e8e8;
+@grey-spectrum-4: #fafafa;
+@grey-spectrum-5: #fefefe;
 
 // Blacks from dark to light
 @black-spectrum-1: #2c2d30;

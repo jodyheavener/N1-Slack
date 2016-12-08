@@ -1,0 +1,59 @@
+.list-container {
+
+  .list-item {
+    background-color: #fff;
+  }
+
+  .list-item:not(.focused) {
+    color: @black-spectrum-1;
+  }
+
+  .list-item.focused {
+    background: @ocean-blue;
+    border-bottom-color: transparent;
+  }
+}
+
+body.theme-ui-light .thread-list.handler-split .list-item.selected:hover .list-column-HoverActions .inner,
+body.theme-ui-light .thread-list .list-item.focused:hover .list-column-HoverActions .inner {
+  background-image: -webkit-linear-gradient(left, fade(@ocean-blue, 0) 0%, @ocean-blue 20%, @ocean-blue 100%);
+}
+
+.thread-list-narrow .participants,
+.thread-list-narrow .subject,
+.thread-list-narrow .snippet-and-labels .snippet {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.thread-list-narrow .participants {
+  font-weight: 700;
+
+  + span {
+    display: none;
+  }
+}
+
+.thread-list-narrow .subject,
+.thread-list-narrow .snippet-and-labels .snippet {
+  font-weight: 400;
+}
+
+.thread-list .timestamp {
+  margin-left: 8px;
+  font-size: 12px;
+  opacity: 0.4;
+}
+
+.thread-list .unread:not(.focused) .subject {
+  font-weight: 400;
+}
+
+.thread-list .unread:not(.focused):not(.selected) {
+  background-color: fade(@grey-spectrum-3, 45%);
+}
+
+.thread-list.handler-split .list-item.selected {
+  background: @ocean-blue;
+  border-color: fade(#fff,10%);
+}

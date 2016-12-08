@@ -1,0 +1,156 @@
+.sheet-toolbar {
+  height: 60px;
+  max-height: 60px;
+  border: none;
+  border-bottom: 1px solid @grey-spectrum-3;
+}
+
+.sheet-toolbar-container {
+  background: #fff;
+  box-shadow: none;
+  border: none;
+}
+
+.toolbar-RootSidebar,
+.toolbar-MessageList,
+.toolbar-MessageListSidebar,
+.toolbar-Center,
+.toolbar-Preferences {
+  height: 100%;
+}
+
+.layout-mode-list .toolbar-MessageList {
+  background: @column-bg;
+  color: #fff;
+  border: none;
+
+  .is-blurred & {
+    background: desaturate(@column-bg, 5%);
+    color: #fff;
+    border: none;
+  }
+}
+
+.toolbar-Preferences,
+.sheet-toolbar-container.mode-list .toolbar-MessageList {
+  background-color: #fff;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: @grey-spectrum-2;
+  }
+
+  .item-back {
+    line-height: 53px;
+  }
+}
+
+.layout-mode-popout {
+
+  .sheet-toolbar {
+    height: 45px;
+    min-height: 45px;
+    max-height: 45px;
+    border: none !important;
+  }
+}
+
+.sheet-toolbar .message-toolbar-arrow {
+  line-height: 50px;
+
+  &:hover img.content-mask,
+  &:active img.content-mask {
+    background-color: @daisy-yellow;
+  }
+}
+
+.sheet-toolbar-container.mode-popout {
+  background: #f2f2f5; // single-use color
+  color: @black-spectrum-2;
+  border: none;
+
+  .is-blurred & {
+    background: #eee;
+    color: @black-spectrum-2;
+    border: none;
+  }
+
+  .window-title {
+    font-weight: 900;
+    font-size: 16px;
+    margin-top: 4px;
+  }
+}
+
+.sheet-toolbar-container.mode-split .toolbar-RootSidebar,
+.sheet-toolbar-container.mode-list .toolbar-RootSidebar {
+  position: relative;
+
+  &:after {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 1px;
+    display: block;
+    background-color: @column-bg;
+  }
+}
+
+// jackiehluo -> (themes): Fixes Windows button UI issues in #1649
+body.platform-win32 .sheet-toolbar-container .btn-toolbar:hover {
+  background: none;
+}
+
+.layout-mode-popout .toolbar-window-controls {
+
+}
+
+.sheet-toolbar .btn-toolbar {
+  padding: 0 5px;
+  background: none;
+  border: none;
+  box-shadow: none;
+  margin-top: 14px;
+
+  &:hover img.content-mask,
+  &:active img.content-mask {
+    background-color: @love-pink;
+  }
+
+  &.mode-toggle.mode-false {
+    background: @grey-spectrum-3;
+
+    .content-mask {
+      background-color: @black-spectrum-1;
+    }
+  }
+}
+
+.message-toolbar-items .btn-toolbar:hover img.content-mask,
+.message-toolbar-items .btn-toolbar:active img.content-mask {
+  background-color: @ocean-blue;
+}
+
+.notifications {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.notification {
+  background: @active-item;
+  color: #ffffff;
+  margin: 0;
+  border-radius: 0;
+
+  .actions-wrapper .action {
+    border-top-color: fade(#fff,20%);
+  }
+}

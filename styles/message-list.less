@@ -2,21 +2,27 @@
   background-color: #fff;
 
   .message-subject-wrap {
-    margin-bottom: 18px;
+    margin-bottom: 16px;
   }
 
   .message-subject {
     font-size: 20px;
     font-weight: 700;
+    line-height: 23px;
     color: @black-spectrum-1;
   }
 
   .thread-injected-mail-labels {
-    margin-top: 3px;
+    margin-top: 1px;
+
+    .mail-label {
+      box-shadow: none !important;
+      background-image: none !important;
+    }
   }
 
   .messages-wrap .scroll-region-content-inner {
-    padding: 10px;
+    padding: 13px 25px;
   }
 
   .message-item-wrap .message-item-white-wrap {
@@ -47,7 +53,7 @@
     }
 
     .composer-action-bar-wrap {
-      background-color: @grey-spectrum-6;
+      background-color: @grey-spectrum-5;
       border-top-left-radius: 0;
       border-top-right-radius: 0;
       border-bottom-left-radius: 6px;
@@ -58,7 +64,7 @@
       box-shadow: none;
 
       .composer-action-bar-wrap {
-        background-color: @grey-spectrum-5;
+        background-color: @grey-spectrum-4;
       }
     }
   }
@@ -76,35 +82,4 @@
     border-left: 5px solid @daffodil-yellow;
     border-radius: 4px;
   }
-}
-
-.tokenizing-field .token {
-  padding: 2px 8px;
-  padding-right: 22px;
-  margin-top: -1px;
-  color: @ocean-blue;
-  font-size: 13px;
-  font-weight: 700;
-  background: none;
-  border: 1px solid @ocean-blue;
-  border-radius: 3px;
-  box-shadow: none;
-
-  .action img {
-    background-color: @ocean-blue;
-  }
-
-  &.selected {
-    color: #fff;
-    background: @ocean-blue;
-    box-shadow: none;
-
-    .action img {
-      background-color: #fff;
-    }
-  }
-}
-
-.composer-action-bar-content {
-  padding: 15px 22px;
 }
