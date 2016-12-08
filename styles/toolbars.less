@@ -31,6 +31,26 @@
   }
 }
 
+.toolbar-Preferences,
+.sheet-toolbar-container.mode-list .toolbar-MessageList {
+  background-color: #fff;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: @grey-spectrum-2;
+  }
+
+  .item-back {
+    line-height: 53px;
+  }
+}
+
 .layout-mode-popout {
 
   .sheet-toolbar {
@@ -38,6 +58,15 @@
     min-height: 45px;
     max-height: 45px;
     border: none !important;
+  }
+}
+
+.sheet-toolbar .message-toolbar-arrow {
+  line-height: 50px;
+
+  &:hover img.content-mask,
+  &:active img.content-mask {
+    background-color: @daisy-yellow;
   }
 }
 
@@ -59,7 +88,8 @@
   }
 }
 
-.sheet-toolbar-container.mode-split .toolbar-RootSidebar {
+.sheet-toolbar-container.mode-split .toolbar-RootSidebar,
+.sheet-toolbar-container.mode-list .toolbar-RootSidebar {
   position: relative;
 
   &:after {
