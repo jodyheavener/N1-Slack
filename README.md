@@ -2,6 +2,9 @@
 
 `v0.1.0` - A Slack-inspired theme for Nylas N1
 
+![Screenshot](/screenshot.png "Check it out!")
+
+
 ## Installing
 
 1. Of course you'll need to [get N1](https://nylas.com/n1) first.
